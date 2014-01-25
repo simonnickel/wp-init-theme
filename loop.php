@@ -32,12 +32,9 @@
 
 <?php endwhile; ?>
 
-<?php else: ?>
+<?php else:
 
-	<!-- article -->
-	<article>
-		<h2><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h2>
-	</article>
-	<!-- /article -->
+		// If no content, include the "No posts found" template.
+		get_template_part( 'content', 'none' );
 
-<?php endif; ?>
+endif; ?>
