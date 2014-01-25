@@ -8,7 +8,7 @@
 	
 		<?php 
 			$post_format = ( get_post_format() ? get_post_format() : 'standard' );
-			get_template_part( 'content/single', $post_format ); 
+			get_template_part( 'article/single', $post_format ); 
 		?>
 
 		</article> <!-- /post -->

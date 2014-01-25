@@ -3,7 +3,7 @@
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php 
 		$post_format = ( get_post_format() ? get_post_format() : 'standard' );
-		get_template_part( 'content/loop', $post_format ); 
+		get_template_part( 'article/loop', $post_format ); 
 	?>
 	</article> <!-- /loop-article -->
 
@@ -12,7 +12,7 @@
 <?php else: ?>
 
 	<article>
-		<?php get_template_part( 'content/loop', 'empty' ); ?>
+		<?php get_template_part( 'article/loop', 'empty' ); ?>
 	</article> <!-- /empty -->
 
 <?php endif; ?>
