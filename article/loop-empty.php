@@ -1,8 +1,3 @@
-<?php
-/**
- * The template for displaying a "No posts found" message
- */
-?>
 <header class="page-header">
 	<h1 class="page-title">Nothing Found</h1>
 </header>
