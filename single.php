@@ -9,17 +9,10 @@
 
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-			<?php if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
-				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-					<?php the_post_thumbnail(); // Fullsize image for the single post ?>
-				</a>
-			<?php endif; ?>
-
-			<h1><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h1>
-
-			<?php the_content(); // Dynamic Content ?>
-
-			<?php comments_template(); ?>
+		<?php 
+			$post_format = ( get_post_format() ? get_post_format() : 'standard' );
+			get_template_part( 'content/single', $post_format ); 
+		?>
 
 		</article><!-- .single-post -->
 
@@ -27,11 +20,11 @@
 
 	<?php else: ?>
 
-	<article id="empty-single">
+		<article id="empty-single">
 
-		<?php get_template_part( 'content/single', 'none' ); ?>
+			<?php get_template_part( 'content/single', 'none' ); ?>
 
-	</article><!-- .empty-loop -->
+		</article><!-- .empty-loop -->
 
 	<?php endif; ?>
 
