@@ -16,7 +16,7 @@ if (function_exists('add_theme_support')) {
 	 * See http://codex.wordpress.org/Post_Formats
 	 */
 	add_theme_support( 'post-formats', array(
-		'aside', 'image', 'video', 'audio', 'quote', 'link', 'gallery',
+		'aside', 'image', 'video', 'audio', 'quote', 'link', 'gallery', 'status', 'chat'
 	) );
 
     // Add Thumbnail Theme Support
