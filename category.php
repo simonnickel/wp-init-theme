@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-	<section class="category">
+	<section class="category postlist">
 
 		<header class="archive-header">
 			<h1 class="archive-title"><?php printf('Category: %s', single_cat_title('', false)); ?></h1>
@@ -12,10 +12,10 @@
 					printf('<div class="taxonomy-description">%s</div>', $term_description);
 				endif;
 			?>
-		</header> <!-- /category-header -->
+		</header>
 
 		<?php get_template_part('loop'); ?>
 
-	</section> <!-- /category-section -->
+	</section> <!-- /archive-section -->
 
 <?php get_footer(); ?>

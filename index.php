@@ -1,9 +1,9 @@
 <?php get_header(); ?>
 
-	<section class="index">
+	<section class="index postlist">
 
 		<?php get_template_part('loop'); ?>
 
-	</section> <!-- /index-section -->
+	</section> <!-- /archive-section -->
 
 <?php get_footer(); ?>
