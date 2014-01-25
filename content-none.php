@@ -3,21 +3,17 @@
  * The template for displaying a "No posts found" message
  */
 ?>
-
 <header class="page-header">
 	<h1 class="page-title">Nothing Found</h1>
 </header>
+<?php if ( is_search() ) : ?>
 
-<div class="page-content">
-	<?php if ( is_search() ) : ?>
+<p>Sorry, but nothing matched your search terms. Please try again with some different keywords.</p>
 
-	<p>Sorry, but nothing matched your search terms. Please try again with some different keywords.</p>
-	
-	<?php else : ?>
+<?php else : ?>
 
-	<p>It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.</p>
+<p>It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.</p>
 
-	<?php endif; ?>
+<?php endif; ?>
 
-	<?php get_search_form(); ?>
-</div><!-- /page-content -->
+<?php get_search_form(); ?>

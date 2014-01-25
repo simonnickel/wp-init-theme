@@ -10,9 +10,14 @@
 
 <?php endwhile; ?>
 
-<?php else:
+<?php else: ?>
+	
+	<!-- article -->
+	<article id="post-none">
 
-		// If no content, include the "No posts found" template.
-		get_template_part( 'content', 'none' );
+		<? get_template_part( 'content', 'none' ); ?>
 
-endif; ?>
+	</article>
+	<!-- /article -->
+
+<? endif; ?>
