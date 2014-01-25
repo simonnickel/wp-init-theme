@@ -16,21 +16,16 @@
 	</head>
 	<body <?php body_class(); ?>>
 
-		<!-- wrapper -->
 		<div class="wrapper">
 
-			<!-- header -->
 			<header class="header clear" role="banner">
 
-					<!-- logo -->
 					<div class="logo">
 						<a href="<?php echo home_url(); ?>">
 							<img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logo" class="logo-img">
 						</a>
-					</div>
-					<!-- /logo -->
+					</div><!-- .logo -->
 
-					<!-- nav -->
 					<nav class="nav" role="navigation">
 						<? wp_nav_menu(array(
 							'theme_location'  => 'header-menu',
@@ -50,8 +45,6 @@
 							'depth'           => 0,
 							'walker'          => ''
 						)); ?>
-					</nav>
-					<!-- /nav -->
+					</nav><!-- .nav -->
 
-			</header>
-			<!-- /header -->
+			</header><!-- .header -->
