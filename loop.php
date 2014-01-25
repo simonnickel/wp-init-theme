@@ -3,7 +3,7 @@
 	<!-- article -->
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		
-		get_template_part( 'content', get_post_format() );
+		<? get_template_part( 'content', get_post_format() ); ?>
 	
 	</article>
 	<!-- /article -->
@@ -11,7 +11,7 @@
 <?php endwhile; ?>
 
 <?php else: ?>
-	
+
 	<!-- article -->
 	<article id="post-none">
 
