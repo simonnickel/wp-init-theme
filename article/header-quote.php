@@ -12,6 +12,7 @@
 		?>
 			<p class="entry-categories">Categories: <?php the_category(' '); ?></p>
 			<p class="entry-tags">Tags: <?php the_tags(' '); ?></p>
+			<p class="entry-post-format">Post Format: <a href="<?php echo get_post_format_link(get_post_format()); ?>"><?php echo get_post_format(); ?></p>
 			<p class="entry-comments-link"><?php comments_popup_link('Leave a comment', '1 Comment', '% Comments'); ?></p>
 	</div>
 </header> <!-- /entry-header -->
