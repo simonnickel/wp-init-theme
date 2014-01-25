@@ -3,7 +3,7 @@
 	<!-- article -->
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		
-		<? get_template_part( 'content', get_post_format() ); ?>
+		<?php get_template_part( 'content', get_post_format() ); ?>
 	
 	</article>
 	<!-- /article -->
@@ -15,9 +15,9 @@
 	<!-- article -->
 	<article id="post-none">
 
-		<? get_template_part( 'content', 'none' ); ?>
+		<?php get_template_part( 'content', 'none' ); ?>
 
 	</article>
 	<!-- /article -->
 
-<? endif; ?>
+<?php endif; ?>
