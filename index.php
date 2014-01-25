@@ -1,9 +1,9 @@
 <?php get_header(); ?>
 
-		<section class="index">
+	<section class="index">
 
-			<?php get_template_part('loop'); ?>
+		<?php get_template_part('loop'); ?>
 
-		</section> <!-- /index-section -->
+	</section> <!-- /index-section -->
 
 <?php get_footer(); ?>

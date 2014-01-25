@@ -4,20 +4,20 @@ Template Name: Custom Page Test
 
 <?php get_header(); ?>
 
-		<section class="page-test">
+	<section class="page-test">
 
-			<h1><?php the_title(); ?></h1>
+		<h1><?php the_title(); ?></h1>
 
-		<?php while (have_posts()) : the_post(); ?>
+	<?php while (have_posts()) : the_post(); ?>
 
-			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-				<?php the_content(); ?>
+			<?php the_content(); ?>
 
-			</article> <!-- /article -->
+		</article> <!-- /article -->
 
-		<?php endwhile; ?>
+	<?php endwhile; ?>
 
-		</section> <!-- /page-test-section -->
+	</section> <!-- /page-test-section -->
 
 <?php get_footer(); ?>
