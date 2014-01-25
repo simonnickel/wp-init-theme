@@ -11,10 +11,10 @@
 
 <?php else: ?>
 
-	<article id="post-none">
+	<article id="empty-loop">
 
-		<?php get_template_part( 'loop', 'none' ); ?>
+		<?php get_template_part( 'content-loop/loop', 'none' ); ?>
 
-	</article><!-- .post-none -->
+	</article><!-- .loop-none -->
 
 <?php endif; ?>
