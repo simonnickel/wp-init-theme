@@ -4,9 +4,6 @@ Template Name: Custom Page Test
 
 <?php get_header(); ?>
 
-<?php get_sidebar(); ?>
-
-	<main role="main">
 		<!-- section -->
 		<section>
 
@@ -28,6 +25,5 @@ Template Name: Custom Page Test
 
 		</section>
 		<!-- /section -->
-	</main>
 
 <?php get_footer(); ?>

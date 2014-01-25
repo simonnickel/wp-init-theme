@@ -18,19 +18,11 @@
 	<body <?php body_class(); ?>>
 		<div class="wrap-body"><div class="wrap-content">
 
-			<header class="header clear" role="banner">
-
-				<div class="logo">
-					<a href="<?php echo home_url(); ?>">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logo" class="logo-img">
-					</a>
-				</div>
-
-				<?php
-					$description = get_bloginfo( 'description', 'display' );
-					if ( ! empty ( $description ) ) :
-				?>
-					<h2 class="site-description"><?php echo esc_html( $description ); ?></h2>
+			<header class="header" role="banner">
+				<h2 class="site-description"><?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' :'; } ?> <?php bloginfo('name'); ?></h2>
+				<?php $description = get_bloginfo('description', 'display');
+					if ( ! empty($description)) : ?>
+						<span class="site-description"><?php echo esc_html( $description ); ?></span>
 				<?php endif; ?>
 
 				<nav class="nav" role="navigation">
@@ -55,3 +47,7 @@
 				</nav><!-- .nav -->
 
 			</header><!-- .header -->
+
+<?php get_sidebar(); ?>
+
+<main role="main">
