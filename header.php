@@ -19,7 +19,7 @@
 		<div class="wrap-body"><div class="wrap-content">
 
 			<header class="header" role="banner">
-				<h2 class="site-description"><?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' :'; } ?> <?php bloginfo('name'); ?></h2>
+				<h2 class="site-description"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo('name'); ?></a></h2>
 				<?php $description = get_bloginfo('description', 'display');
 					if ( ! empty($description)) : ?>
 						<span class="site-description"><?php echo esc_html( $description ); ?></span>
