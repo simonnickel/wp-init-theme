@@ -20,11 +20,9 @@
 
 	<?php else: ?>
 
-		<article id="empty-single">
-
-			<?php get_template_part( 'content/single', 'none' ); ?>
-
-		</article><!-- .empty-loop -->
+		<article>
+			<?php get_template_part( 'content/default', 'empty' ); ?>
+		</article><!-- .empty -->
 
 	<?php endif; ?>
 

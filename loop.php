@@ -11,10 +11,8 @@
 
 <?php else: ?>
 
-	<article id="empty-loop">
-
-		<?php get_template_part( 'content/loop', 'none' ); ?>
-
-	</article><!-- .empty-loop -->
+	<article>
+		<?php get_template_part( 'content/default', 'empty' ); ?>
+	</article><!-- .empty -->
 
 <?php endif; ?>
