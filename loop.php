@@ -1,18 +1,21 @@
-<?php if (have_posts()): while (have_posts()) : the_post(); ?>
+<?php if (have_posts()): while (have_posts()) : the_post(); 
 
-	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<?php 
-		$post_format = ( get_post_format() ? get_post_format() : 'standard' );
-		get_template_part( 'article/loop', $post_format ); 
-	?>
+	$post_format = (get_post_format() ? get_post_format() : 'standard' ); ?>
+
+	<article id="post-<?php the_ID(); ?>" <?php post_class($post_format); ?>>
+
+		<?php get_template_part( 'article/loop', $post_format ); ?>
+	
 	</article> <!-- /loop-article -->
 
 <?php endwhile; ?>
 
 <?php else: ?>
 
-	<article>
+	<article class="loop-empty">
+
 		<?php get_template_part( 'article/loop', 'empty' ); ?>
+	
 	</article> <!-- /empty -->
 
 <?php endif; ?>
