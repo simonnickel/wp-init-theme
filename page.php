@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-		<section>
+		<section class="page">
 
 			<h1><?php the_title(); ?></h1>
 
@@ -10,14 +10,10 @@
 
 				<?php the_content(); ?>
 
-				<?php comments_template( '', true ); // Remove if you don't want comments ?>
-
-			</article>
-			<!-- /article -->
+			</article> <!-- /article -->
 
 		<?php endwhile; ?>
 
-		</section>
-		<!-- /section -->
+		</section> <!-- /page-section -->
 
 <?php get_footer(); ?>
