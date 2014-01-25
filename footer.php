@@ -1,5 +1,5 @@
 			<footer class="footer" role="contentinfo">
-				Footer
+				<h2>Footer</h2>
 			</footer><!-- .footer -->
 
 		</div><!-- .wrapper -->

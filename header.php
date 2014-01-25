@@ -24,7 +24,14 @@
 						<a href="<?php echo home_url(); ?>">
 							<img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logo" class="logo-img">
 						</a>
-					</div><!-- .logo -->
+					</div>
+
+					<?php
+						$description = get_bloginfo( 'description', 'display' );
+						if ( ! empty ( $description ) ) :
+					?>
+						<h2 class="site-description"><?php echo esc_html( $description ); ?></h2>
+					<?php endif; ?>
 
 					<nav class="nav" role="navigation">
 						<? wp_nav_menu(array(

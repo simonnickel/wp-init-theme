@@ -1,10 +1,6 @@
 <aside class="sidebar" role="complementary">
-	<?php
-		$description = get_bloginfo( 'description', 'display' );
-		if ( ! empty ( $description ) ) :
-	?>
-	<h2 class="site-description"><?php echo esc_html( $description ); ?></h2>
-	<?php endif; ?>
+
+	<h2>Sidebar</h2>
 
 	<?php if ( has_nav_menu( 'secondary' ) ) : ?>
 	<nav role="navigation" class="navigation site-navigation secondary-navigation">
@@ -12,9 +8,9 @@
 	</nav>
 	<?php endif; ?>
 
-	<?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
+	<?php if ( is_active_sidebar( 'primary-sidebar' ) ) : ?>
 	<div id="primary-sidebar" class="primary-sidebar widget-area">
-		<?php dynamic_sidebar( 'sidebar-1' ); ?>
+		<?php dynamic_sidebar( 'primary-sidebar' ); ?>
 	</div><!-- .primary-sidebar -->
 	<?php endif; ?>
 
