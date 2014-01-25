@@ -26,7 +26,7 @@
 				<?php endif; ?>
 
 				<nav class="nav" role="navigation">
-					<? wp_nav_menu(array(
+					<?php wp_nav_menu(array(
 						'theme_location'  => 'header-menu',
 						'menu'            => '',
 						'container'       => 'div',
@@ -44,9 +44,9 @@
 						'depth'           => 0,
 						'walker'          => ''
 					)); ?>
-				</nav><!-- .nav -->
+				</nav> <!-- /nav -->
 
-			</header><!-- .header -->
+			</header> <!-- /header -->
 
 <?php get_sidebar(); ?>
 

@@ -11,7 +11,7 @@
 	<?php if ( is_active_sidebar( 'primary-sidebar' ) ) : ?>
 	<div id="primary-sidebar" class="primary-sidebar widget-area">
 		<?php dynamic_sidebar( 'primary-sidebar' ); ?>
-	</div><!-- .primary-sidebar -->
+	</div> <!-- /primary-sidebar -->
 	<?php endif; ?>
 
-</aside><!-- .sidebar -->
+</aside> <!-- /sidebar -->

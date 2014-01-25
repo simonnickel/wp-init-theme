@@ -5,15 +5,15 @@
 		$post_format = ( get_post_format() ? get_post_format() : 'standard' );
 		get_template_part( 'content/loop', $post_format ); 
 	?>
-	</article><!-- .loop-article -->
+	</article> <!-- /loop-article -->
 
 <?php endwhile; ?>
 
 <?php else: ?>
 
 	<article>
-		<?php get_template_part( 'content/default', 'empty' ); ?>
-	</article><!-- .empty -->
+		<?php get_template_part( 'content/loop', 'empty' ); ?>
+	</article> <!-- /empty -->
 
 <?php endif; ?>
 
