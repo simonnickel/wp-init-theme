@@ -13,7 +13,7 @@ Content:
 
 	* markStyle
 	* markLayout
-*/
+*
 * {
 	outline:1px solid #000
 }
@@ -43,10 +43,14 @@ body {
 	font-family: Helvetica, Arial, sans-serif;
 	font-weight: normal;	
 	font-size: 16px;
-	background: url('background.jpg') repeat;
 }
-.wrap-body {
-	background: url('background-highlight.png') top center no-repeat;
+body>header, 
+body>footer,
+body>main,
+.wrap-body,
+.wrap-body>section,
+.wrap-body>section>* {
+	background-color: rgba(0, 0, 0, 0.1);
 }
 
 p {
@@ -58,40 +62,55 @@ p {
 
 .wrap-body {
 	width: 1200px; /* @media ab max-width=width umstellen */
-
-	min-height: 600px;
 	margin: auto;
 }
-	@media screen and (max-width: 1199px) {.wrap-body {width: 900px;}}
-	@media screen and (max-width: 899px) {.wrap-body {width: 100%;}}
-.wrap-content {
+	@media screen and (max-width: 1200px) {.wrap-body {width: 100%;}}
+.wrap-body>section {
+	width: 900px;
+	margin: auto;
+	position: relative;
+}
+	@media screen and (max-width: 920px) {.wrap-body>section {width: 100%;}}
+.wrap-body>section>* {
 	position: relative;
 	padding: 10px;
 }
-.wrap-content>* {
-	position: relative;
-	width: 100%;
-	padding: 10px 0;
+
+
+main .wrap-body>section.postlist-with-sidebar>* {
+	width: 600px;
+	margin-left: 280px;
 }
-.wrap-content>header nav {
-	position: absolute;
-	bottom: 10px; right: 0;
-}
-.wrap-content>header nav li {
-	display: inline;
-}
-.sidebar {
+	@media screen and (max-width: 920px) {
+		main .wrap-body>section.postlist-with-sidebar>* {
+			width: 100%;
+			margin-left: 0;
+		}
+	}
+main .wrap-body>section>.sidebar {
 	float: left;
-	width: 200px;
+	width: 250px;
+	margin-left: 0;
 }
-main>* {
-	margin-left: 210px;
+	@media screen and (max-width: 920px) {
+		main .wrap-body>section>.sidebar {
+			float:none;
+		}
+	}
+.postlist>* {
+	margin-bottom: 20px;
 }
-body>footer {
-	width: 100%;
+
+
+main {
+	margin: 70px 0;
 }
-@media screen and (max-width: 899px) {
-	.wrap-body {width: 100%;}
+main .wrap-body>section {
+	margin: 40px auto;
+}
+main .wrap-body>section>*,
+footer .wrap-body>section>* {
+	margin: 10px 0;
 }
 
 
@@ -99,7 +118,13 @@ body>footer {
 
 
 
-
 /*	markLayout	*/
 
+/*	markLayoutHeader	*/
+body>header nav {
+	float:right;
+}
+body>header nav li {
+	display: inline;
+}
 
