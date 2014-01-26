@@ -6,7 +6,7 @@
 
 		<?php get_template_part( 'article/loop', $post_format ); ?>
 	
-	</article> <!-- /loop-article -->
+	</article>
 
 <?php endwhile; ?>
 

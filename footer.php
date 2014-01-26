@@ -1,4 +1,4 @@
-</div></main> <!-- /wrap-main -->
+</div></main>
 
 <footer role="contentinfo">
 	<div class="wrap-body">
