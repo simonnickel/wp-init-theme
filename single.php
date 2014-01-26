@@ -15,6 +15,6 @@
 
 	<?php endwhile; ?>
 
-	</section> <!-- /single-section -->
+	</section>
 
 <?php get_footer(); ?>

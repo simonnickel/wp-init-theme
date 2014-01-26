@@ -16,7 +16,7 @@
 
 		<?php get_template_part( 'article/loop', 'empty' ); ?>
 	
-	</article> <!-- /empty -->
+	</article>
 
 <?php endif; ?>
 

@@ -10,10 +10,10 @@
 
 			<?php the_content(); ?>
 
-		</article> <!-- /article -->
+		</article>
 
 	<?php endwhile; ?>
 
-	</section> <!-- /page-section -->
+	</section>
 
 <?php get_footer(); ?>

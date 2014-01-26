@@ -9,6 +9,6 @@
 
 		<?php get_template_part('loop'); ?>
 
-	</section> <!-- /archive-section -->
+	</section>
 
 <?php get_footer(); ?>

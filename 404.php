@@ -8,6 +8,6 @@
 
 		<?php get_search_form(); ?>
 
-	</section> <!-- /404-section -->
+	</section>
 
 <?php get_footer(); ?>

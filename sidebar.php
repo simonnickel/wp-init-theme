@@ -14,4 +14,4 @@
 	</div> <!-- /primary-sidebar -->
 	<?php endif; ?>
 
-</aside> <!-- /sidebar -->
+</aside>

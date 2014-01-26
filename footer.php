@@ -9,7 +9,7 @@
 			<?php if (is_active_sidebar('footer-sidebar')) : ?>
 			<div id="footer-sidebar" class="footer-sidebar widget-area">
 				<?php dynamic_sidebar('footer-sidebar'); ?>
-			</div> <!-- /primary-sidebar -->
+			</div> <!-- /footer-sidebar -->
 			<?php endif; ?>
 		</section>
 
@@ -23,7 +23,7 @@
 			</article>
 		</section>
 	</div>
-</footer> <!-- /footer -->
+</footer>
 
 		<?php wp_footer(); ?>
 

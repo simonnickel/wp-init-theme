@@ -45,9 +45,9 @@
 				'depth'           => 0,
 				'walker'          => ''
 			)); ?>
-		</nav> <!-- /nav -->
+		</nav>
 
-	</section></div> <!-- /wrap-header -->
-</header> <!-- /header -->
+	</section></div>
+</header>
 
 <main role="main"><div class="wrap-body">

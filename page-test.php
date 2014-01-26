@@ -14,10 +14,10 @@ Template Name: Custom Page Test
 
 			<?php the_content(); ?>
 
-		</article> <!-- /article -->
+		</article>
 
 	<?php endwhile; ?>
 
-	</section> <!-- /page-test-section -->
+	</section>
 
 <?php get_footer(); ?>

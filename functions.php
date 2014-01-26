@@ -26,15 +26,6 @@ if (function_exists('add_theme_support')) {
     add_image_size('small', 120, '', true); // Small Thumbnail
     add_image_size('custom-size', 700, 200, true); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
 
-	// Add support for featured content.
-	/*add_theme_support( 'featured-content', array(
-		'featured_content_filter' => 'twentyfourteen_get_featured_posts',
-		'max_posts' => 6,
-	) );
-	*/
-	// This theme uses its own gallery styles.
-	//add_filter( 'use_default_gallery_style', '__return_false' );
-
     // Add Support for Custom Backgrounds - Uncomment below if you're going to use
     /*add_theme_support('custom-background', array(
 	'default-color' => 'FFF',
