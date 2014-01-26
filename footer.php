@@ -4,12 +4,13 @@
 	<div class="wrap-body">
 		<section>
 			<header>
-				<h2>FOOTER Section 1</h2>
+				<h2>FOOTER Sidebar</h2>
 			</header>
-			<article>
-				<h2>ARTICLE</h2>
-				<p>Article Text</p>
-			</article>
+			<?php if (is_active_sidebar('footer-sidebar')) : ?>
+			<div id="footer-sidebar" class="footer-sidebar widget-area">
+				<?php dynamic_sidebar('footer-sidebar'); ?>
+			</div> <!-- /primary-sidebar -->
+			<?php endif; ?>
 		</section>
 
 		<section>

@@ -54,6 +54,16 @@ if (function_exists('register_sidebar')) {
         'before_title' => '<h3>',
         'after_title' => '</h3>'
     ));
+    // Define Footer Widget Area
+    register_sidebar(array(
+        'name' => 'footer-sidebar',
+        'description' => 'Description for this widget-area...',
+        'id' => 'footer-sidebar',
+        'before_widget' => '<article id="%1$s" class="%2$s">',
+        'after_widget' => '</article>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
 }
 
 ?>
