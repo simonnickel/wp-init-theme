@@ -20,7 +20,7 @@
 
 <?php endif; ?>
 
-<div class="pagination">
+<footer class="pagination">
 <?php
     global $wp_query;
     $big = 999999999;
@@ -31,4 +31,4 @@
         'total' => $wp_query->max_num_pages
     ));
 ?>
-</div>
+</footer>
