@@ -49,8 +49,8 @@ if (function_exists('register_sidebar')) {
         'name' => 'primary-sidebar',
         'description' => 'Description for this widget-area...',
         'id' => 'primary-sidebar',
-        'before_widget' => '<div id="%1$s" class="%2$s">',
-        'after_widget' => '</div>',
+        'before_widget' => '<article id="%1$s" class="%2$s">',
+        'after_widget' => '</article>',
         'before_title' => '<h3>',
         'after_title' => '</h3>'
     ));
