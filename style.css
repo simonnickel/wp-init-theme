@@ -53,10 +53,24 @@ body>main,
 	background-color: rgba(0, 0, 0, 0.1);
 }
 
+.current-page-ancestor a {
+	padding-bottom: 5px;
+	border-bottom: 2px solid rgba(255,255,255,0.3);
+}
+*:focus {
+	outline-color: #ddd;
+}
 p {
 	line-height: 1.5em;
 }
-
+strong {
+	font-weight:bold;
+}
+em, 
+strong, 
+blockquote {
+	font-style:italic;
+}
 
 /*	markGeneralLayout	*/
 
